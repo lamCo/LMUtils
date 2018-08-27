@@ -14,6 +14,8 @@
                               object:(id)anObject
                             userInfo:(NSDictionary *)userinfo {
     
+    
+    
     if (pthread_main_np()) {
         [[self defaultCenter] postNotificationName:name object:anObject userInfo:userinfo];
     } else {
