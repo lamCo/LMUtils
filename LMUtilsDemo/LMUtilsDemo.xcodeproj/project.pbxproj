@@ -24,6 +24,8 @@
 		3B4C0EA1211AEBB100AB3360 /* UIColor+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0E98211AEBB100AB3360 /* UIColor+LMUtils.m */; };
 		3B4C0EA7211AECA200AB3360 /* NSArray+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0EA6211AECA200AB3360 /* NSArray+LMUtils.m */; };
 		3B4C0EAA211AED3200AB3360 /* NSObject+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0EA9211AED3200AB3360 /* NSObject+LMUtils.m */; };
+		3B83F7FF2133CE9800495682 /* UIView+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F7FE2133CE9800495682 /* UIView+LMUtils.m */; };
+		3B83F8022133CF0B00495682 /* UIScrollView+LMEventObstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F8012133CF0B00495682 /* UIScrollView+LMEventObstruct.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,10 @@
 		3B4C0EA8211AED3200AB3360 /* NSObject+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LMUtils.h"; sourceTree = "<group>"; };
 		3B4C0EA9211AED3200AB3360 /* NSObject+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMUtils.m"; sourceTree = "<group>"; };
 		3B4C0EAB211AEDBE00AB3360 /* LMMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMacro.h; sourceTree = "<group>"; };
+		3B83F7FD2133CE9800495682 /* UIView+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LMUtils.h"; sourceTree = "<group>"; };
+		3B83F7FE2133CE9800495682 /* UIView+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LMUtils.m"; sourceTree = "<group>"; };
+		3B83F8002133CF0B00495682 /* UIScrollView+LMEventObstruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LMEventObstruct.h"; sourceTree = "<group>"; };
+		3B83F8012133CF0B00495682 /* UIScrollView+LMEventObstruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LMEventObstruct.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,10 @@
 				3B4C0E88211AEBB100AB3360 /* UIImage+LMUtils.m */,
 				3B4C0E8D211AEBB100AB3360 /* UIScrollView+LMUtils.h */,
 				3B4C0E93211AEBB100AB3360 /* UIScrollView+LMUtils.m */,
+				3B83F7FD2133CE9800495682 /* UIView+LMUtils.h */,
+				3B83F7FE2133CE9800495682 /* UIView+LMUtils.m */,
+				3B83F8002133CF0B00495682 /* UIScrollView+LMEventObstruct.h */,
+				3B83F8012133CF0B00495682 /* UIScrollView+LMEventObstruct.m */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -224,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B83F7FF2133CE9800495682 /* UIView+LMUtils.m in Sources */,
 				3B4C0E73211AEB7800AB3360 /* ViewController.m in Sources */,
 				3B4C0E7E211AEB7800AB3360 /* main.m in Sources */,
 				3B4C0EAA211AED3200AB3360 /* NSObject+LMUtils.m in Sources */,
@@ -236,6 +247,7 @@
 				3B4C0E9E211AEBB100AB3360 /* UIScrollView+LMUtils.m in Sources */,
 				3B4C0E9A211AEBB100AB3360 /* NSString+LMUtils.m in Sources */,
 				3B4C0EA0211AEBB100AB3360 /* UIAlertController+LMUtils.m in Sources */,
+				3B83F8022133CF0B00495682 /* UIScrollView+LMEventObstruct.m in Sources */,
 				3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */,
 				3B4C0E99211AEBB100AB3360 /* UIAlertAction+LMUtils.m in Sources */,
 			);

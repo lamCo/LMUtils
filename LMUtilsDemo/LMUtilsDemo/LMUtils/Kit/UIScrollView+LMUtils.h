@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-/**
-    UIScrollView分类 - 处理事件阻隔
- */
+
 @interface UIScrollView (LMUtils)
 
 @end

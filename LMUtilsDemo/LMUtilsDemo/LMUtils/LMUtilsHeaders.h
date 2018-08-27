@@ -13,6 +13,7 @@
 #import "UIAlertController+LMUtils.h"
 #import "UIImage+LMUtils.h"
 #import "UIColor+LMUtils.h"
+#import "UIView+LMUtils.h"
 //#import "UIScrollView+LMUtils.h"
 
 #import "CALayer+LMUtils.h"
