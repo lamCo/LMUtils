@@ -7,7 +7,6 @@
 //
 
 #import "UITableView+LMUtils.h"
-#import "LMMacro.h"
 
 @implementation UITableView (LMUtils)
 
@@ -27,7 +26,9 @@
     if (cellNib) {
         [self registerNib:cellNib forCellReuseIdentifier:identifier];
     } else {
-        LMLog(@"%@ register nil Cell Nib",NSStringFromClass(cellClass));
+#if DEBUG
+         NSLog(@"<%s> %@ register nil Cell Nib",__FUNCTION__,NSStringFromClass(cellClass));
+#endif
     }
 }
 
