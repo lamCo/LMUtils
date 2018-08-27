@@ -28,6 +28,7 @@
 		3B83F8022133CF0B00495682 /* UIScrollView+LMEventObstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F8012133CF0B00495682 /* UIScrollView+LMEventObstruct.m */; };
 		3B83F8052133DF1100495682 /* UITableView+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F8042133DF1100495682 /* UITableView+LMUtils.m */; };
 		3B83F8082133DFAE00495682 /* NSNotificationCenter+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F8072133DFAE00495682 /* NSNotificationCenter+LMUtils.m */; };
+		3B83F80B2133E90C00495682 /* NSMutableAttributedString+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		3B83F8042133DF1100495682 /* UITableView+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LMUtils.m"; sourceTree = "<group>"; };
 		3B83F8062133DFAE00495682 /* NSNotificationCenter+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+LMUtils.h"; sourceTree = "<group>"; };
 		3B83F8072133DFAE00495682 /* NSNotificationCenter+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+LMUtils.m"; sourceTree = "<group>"; };
+		3B83F8092133E90C00495682 /* NSMutableAttributedString+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+LMUtils.h"; sourceTree = "<group>"; };
+		3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+LMUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				3B4C0EA9211AED3200AB3360 /* NSObject+LMUtils.m */,
 				3B83F8062133DFAE00495682 /* NSNotificationCenter+LMUtils.h */,
 				3B83F8072133DFAE00495682 /* NSNotificationCenter+LMUtils.m */,
+				3B83F8092133E90C00495682 /* NSMutableAttributedString+LMUtils.h */,
+				3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				3B83F8022133CF0B00495682 /* UIScrollView+LMEventObstruct.m in Sources */,
 				3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */,
 				3B4C0E99211AEBB100AB3360 /* UIAlertAction+LMUtils.m in Sources */,
+				3B83F80B2133E90C00495682 /* NSMutableAttributedString+LMUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
