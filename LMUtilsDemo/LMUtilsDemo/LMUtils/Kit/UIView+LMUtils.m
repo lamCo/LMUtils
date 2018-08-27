@@ -8,7 +8,21 @@
 
 #import "UIView+LMUtils.h"
 
-@implementation UIView (LMViewXibUtils)
+@implementation UIView (LMViewUtils)
+
+/// 找到当前所在的vc
+- (UIViewController *)viewContoroller {
+    //通过 responder 找到view所在的vc
+    for (UIView *next = [self superview]; next; next = next.superview)
+    {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]])
+        {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
 
 // 在Main Bundle内根据View的类名创建Xib View
 + (instancetype)instantiateFromNibInMainBundle {

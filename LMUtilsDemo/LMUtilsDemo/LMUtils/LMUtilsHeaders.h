@@ -14,6 +14,7 @@
 #import "UIImage+LMUtils.h"
 #import "UIColor+LMUtils.h"
 #import "UIView+LMUtils.h"
+#import "UITableView+LMUtils.h"
 //#import "UIScrollView+LMUtils.h"
 
 #import "CALayer+LMUtils.h"
@@ -21,3 +22,4 @@
 #import "NSNull+LMUtils.h"
 #import "NSArray+LMUtils.h"
 #import "NSObject+LMUtils.h"
+#import "NSNotificationCenter+LMUtils.h"

@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 /// View xib分类
-@interface UIView (LMViewXibUtils)
+@interface UIView (LMViewUtils)
+
+/// 当前view所在的vc
+@property (nonatomic, readonly) UIViewController *viewContoroller;
 
 /**
  *  在Main Bundle内根据View的类名创建Xib View
