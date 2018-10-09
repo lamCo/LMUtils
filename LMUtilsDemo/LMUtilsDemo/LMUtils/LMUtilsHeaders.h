@@ -15,11 +15,13 @@
 #import "UIColor+LMUtils.h"
 #import "UIView+LMUtils.h"
 #import "UITableView+LMUtils.h"
+#import "UIViewController+LMUtils.h"
 //#import "UIScrollView+LMUtils.h"
 
 #import "CALayer+LMUtils.h"
 #import "NSString+LMUtils.h"
 #import "NSNull+LMUtils.h"
 #import "NSArray+LMUtils.h"
+#import "NSMutableArray+LMUtils.h"
 #import "NSObject+LMUtils.h"
 #import "NSNotificationCenter+LMUtils.h"

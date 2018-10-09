@@ -13,23 +13,24 @@
 @implementation UIImage (LMUtils)
 
 + (void)load {
-    
-    static dispatch_once_t onceToken;
-    
-    dispatch_once(&onceToken, ^{
+    @autoreleasepool {
+        static dispatch_once_t onceToken;
         
-        Class class = [self class];
-        
-        SEL originalSelector = @selector(imageNamed:);
-        
-        SEL swizzledSelector = @selector(lm_imageNamed:);
-        
-        Method originalMethod = class_getClassMethod(class, originalSelector);
-        
-        Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
-        
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    });
+        dispatch_once(&onceToken, ^{
+            
+            Class class = [self class];
+            
+            SEL originalSelector = @selector(imageNamed:);
+            
+            SEL swizzledSelector = @selector(lm_imageNamed:);
+            
+            Method originalMethod = class_getClassMethod(class, originalSelector);
+            
+            Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
+            
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        });
+    }
 }
 
 + (UIImage *)lm_imageNamed:(NSString *)name {

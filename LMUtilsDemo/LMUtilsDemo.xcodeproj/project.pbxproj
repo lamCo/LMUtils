@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B080DB5215352110009CD7B /* NSMutableArray+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */; };
 		3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0E6F211AEB7800AB3360 /* AppDelegate.m */; };
 		3B4C0E73211AEB7800AB3360 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0E72211AEB7800AB3360 /* ViewController.m */; };
 		3B4C0E76211AEB7800AB3360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C0E74211AEB7800AB3360 /* Main.storyboard */; };
@@ -29,9 +30,12 @@
 		3B83F8052133DF1100495682 /* UITableView+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F8042133DF1100495682 /* UITableView+LMUtils.m */; };
 		3B83F8082133DFAE00495682 /* NSNotificationCenter+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F8072133DFAE00495682 /* NSNotificationCenter+LMUtils.m */; };
 		3B83F80B2133E90C00495682 /* NSMutableAttributedString+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */; };
+		3BA6D268216B516F00ED5F86 /* UIViewController+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6D267216B516F00ED5F86 /* UIViewController+LMUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B080DB3215352110009CD7B /* NSMutableArray+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LMUtils.h"; sourceTree = "<group>"; };
+		3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LMUtils.m"; sourceTree = "<group>"; };
 		3B4C0E6B211AEB7800AB3360 /* LMUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4C0E6E211AEB7800AB3360 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B4C0E6F211AEB7800AB3360 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 		3B83F8072133DFAE00495682 /* NSNotificationCenter+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+LMUtils.m"; sourceTree = "<group>"; };
 		3B83F8092133E90C00495682 /* NSMutableAttributedString+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+LMUtils.h"; sourceTree = "<group>"; };
 		3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+LMUtils.m"; sourceTree = "<group>"; };
+		3BA6D266216B516F00ED5F86 /* UIViewController+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LMUtils.h"; sourceTree = "<group>"; };
+		3BA6D267216B516F00ED5F86 /* UIViewController+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LMUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 				3B83F8072133DFAE00495682 /* NSNotificationCenter+LMUtils.m */,
 				3B83F8092133E90C00495682 /* NSMutableAttributedString+LMUtils.h */,
 				3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */,
+				3B080DB3215352110009CD7B /* NSMutableArray+LMUtils.h */,
+				3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -175,6 +183,8 @@
 				3B83F8012133CF0B00495682 /* UIScrollView+LMEventObstruct.m */,
 				3B83F8032133DF1100495682 /* UITableView+LMUtils.h */,
 				3B83F8042133DF1100495682 /* UITableView+LMUtils.m */,
+				3BA6D266216B516F00ED5F86 /* UIViewController+LMUtils.h */,
+				3BA6D267216B516F00ED5F86 /* UIViewController+LMUtils.m */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -259,6 +269,7 @@
 				3B4C0E9C211AEBB100AB3360 /* CALayer+LMUtils.m in Sources */,
 				3B4C0E9B211AEBB100AB3360 /* UIImage+LMUtils.m in Sources */,
 				3B83F8082133DFAE00495682 /* NSNotificationCenter+LMUtils.m in Sources */,
+				3B080DB5215352110009CD7B /* NSMutableArray+LMUtils.m in Sources */,
 				3B4C0EA7211AECA200AB3360 /* NSArray+LMUtils.m in Sources */,
 				3B4C0E9D211AEBB100AB3360 /* NSNull+LMUtils.m in Sources */,
 				3B4C0E9E211AEBB100AB3360 /* UIScrollView+LMUtils.m in Sources */,
@@ -266,6 +277,7 @@
 				3B4C0EA0211AEBB100AB3360 /* UIAlertController+LMUtils.m in Sources */,
 				3B83F8022133CF0B00495682 /* UIScrollView+LMEventObstruct.m in Sources */,
 				3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */,
+				3BA6D268216B516F00ED5F86 /* UIViewController+LMUtils.m in Sources */,
 				3B4C0E99211AEBB100AB3360 /* UIAlertAction+LMUtils.m in Sources */,
 				3B83F80B2133E90C00495682 /* NSMutableAttributedString+LMUtils.m in Sources */,
 			);

@@ -30,29 +30,30 @@ static NSArray *_IgnoreButtonsClasss = nil;
 
 
 + (void)load {
-    
-    static dispatch_once_t onceToken;
-    
-    dispatch_once(&onceToken, ^{
+    @autoreleasepool {
+        static dispatch_once_t onceToken;
         
-        Class class = [self class];
-        
-        SEL originalSelector = @selector(sendAction:to:forEvent:);
-        
-        SEL swizzledSelector = @selector(lm_sendAction:to:forEvent:);
-        
-        
-        Method originalMethod = class_getInstanceMethod(class, originalSelector);
-        
-        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
-        
-        if (class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))) {
+        dispatch_once(&onceToken, ^{
             
-            class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
-        } else {
-            method_exchangeImplementations(originalMethod, swizzledMethod);
-        }
-    });
+            Class class = [self class];
+            
+            SEL originalSelector = @selector(sendAction:to:forEvent:);
+            
+            SEL swizzledSelector = @selector(lm_sendAction:to:forEvent:);
+            
+            
+            Method originalMethod = class_getInstanceMethod(class, originalSelector);
+            
+            Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+            
+            if (class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))) {
+                
+                class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+            } else {
+                method_exchangeImplementations(originalMethod, swizzledMethod);
+            }
+        });
+    }
 }
 
 static const char *UIControl_acceptEventInterval = "UIControl_acceptEventInterval";

@@ -10,4 +10,16 @@
 
 @interface NSObject (LMUtils)
 
+
+
+/**
+ 替换系统方法
+
+ @param swizzledSelector 替换方法
+ @param systemSelector 系统方法
+ @return 是否成功
+ */
++ (BOOL)swizzledSelector:(SEL)swizzledSelector
+          systemSelector:(SEL)systemSelector;
+
 @end

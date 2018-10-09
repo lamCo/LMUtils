@@ -21,23 +21,24 @@ NS_INLINE bool kAAValidArrayWithCount(NSArray * array) {
 }
 
 + (void)load {
-    
-    static dispatch_once_t onceToken;
-    
-    dispatch_once(&onceToken, ^{
+    @autoreleasepool {
+        static dispatch_once_t onceToken;
         
-        Class class = [self class];
-        
-        SEL originalSelector = @selector(alertControllerWithTitle:message:preferredStyle:);
-        
-        SEL swizzledSelector = @selector(lm_alertControllerWithTitle:message:preferredStyle:);
-        
-        Method originalMethod = class_getClassMethod(class, originalSelector);
-        
-        Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
-        
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    });
+        dispatch_once(&onceToken, ^{
+            
+            Class class = [self class];
+            
+            SEL originalSelector = @selector(alertControllerWithTitle:message:preferredStyle:);
+            
+            SEL swizzledSelector = @selector(lm_alertControllerWithTitle:message:preferredStyle:);
+            
+            Method originalMethod = class_getClassMethod(class, originalSelector);
+            
+            Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
+            
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        });
+    }
 }
 
 
