@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B080DB5215352110009CD7B /* NSMutableArray+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */; };
+		3B20FD9E2175777E0061492B /* UINavigationController+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B20FD9D2175777E0061492B /* UINavigationController+LMUtils.m */; };
 		3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0E6F211AEB7800AB3360 /* AppDelegate.m */; };
 		3B4C0E73211AEB7800AB3360 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0E72211AEB7800AB3360 /* ViewController.m */; };
 		3B4C0E76211AEB7800AB3360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C0E74211AEB7800AB3360 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		3B080DB3215352110009CD7B /* NSMutableArray+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LMUtils.h"; sourceTree = "<group>"; };
 		3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LMUtils.m"; sourceTree = "<group>"; };
+		3B20FD9C2175777E0061492B /* UINavigationController+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LMUtils.h"; sourceTree = "<group>"; };
+		3B20FD9D2175777E0061492B /* UINavigationController+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LMUtils.m"; sourceTree = "<group>"; };
 		3B4C0E6B211AEB7800AB3360 /* LMUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4C0E6E211AEB7800AB3360 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B4C0E6F211AEB7800AB3360 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				3B83F8042133DF1100495682 /* UITableView+LMUtils.m */,
 				3BA6D266216B516F00ED5F86 /* UIViewController+LMUtils.h */,
 				3BA6D267216B516F00ED5F86 /* UIViewController+LMUtils.m */,
+				3B20FD9C2175777E0061492B /* UINavigationController+LMUtils.h */,
+				3B20FD9D2175777E0061492B /* UINavigationController+LMUtils.m */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */,
 				3BA6D268216B516F00ED5F86 /* UIViewController+LMUtils.m in Sources */,
 				3B4C0E99211AEBB100AB3360 /* UIAlertAction+LMUtils.m in Sources */,
+				3B20FD9E2175777E0061492B /* UINavigationController+LMUtils.m in Sources */,
 				3B83F80B2133E90C00495682 /* NSMutableAttributedString+LMUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
