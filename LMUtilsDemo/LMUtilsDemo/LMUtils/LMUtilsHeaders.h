@@ -16,6 +16,7 @@
 #import "UIView+LMUtils.h"
 #import "UITableView+LMUtils.h"
 #import "UIViewController+LMUtils.h"
+#import "UILabel+LMUtils.h"
 //#import "UIScrollView+LMUtils.h"
 
 #import "CALayer+LMUtils.h"
