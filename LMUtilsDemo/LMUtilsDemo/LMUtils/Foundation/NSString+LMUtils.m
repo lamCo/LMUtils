@@ -50,4 +50,17 @@
     return self;
 }
 
+
+/// 获取文字size
+- (CGSize)stringSizeFromFont:(UIFont *)font {
+    return [self stringSizeFromMaxSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) font:font];
+}
+
+///  获取文字size
+- (CGSize)stringSizeFromMaxSize:(CGSize)masSize font:(UIFont *)font {
+    CGSize size = [self boundingRectWithSize:masSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading  attributes:@{NSFontAttributeName:font} context:nil].size;
+    
+    return size;
+}
+
 @end

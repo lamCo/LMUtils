@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
     String 分类
@@ -24,5 +25,17 @@
 @property (readonly) unsigned long long unsignedLongLongValue;
 @property (readonly) NSUInteger unsignedIntegerValue NS_AVAILABLE(10_5, 2_0);
 @property (readonly, copy) NSString *stringValue;
+
+/// 获取文字size
+- (CGSize)stringSizeFromFont:(UIFont *)font;
+
+/**
+ 获取文字size
+ 
+ @param size 最大szie
+ @param font font
+ @return size
+ */
+- (CGSize)stringSizeFromMaxSize:(CGSize)size font:(UIFont *)font;
 
 @end
