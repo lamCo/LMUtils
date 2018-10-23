@@ -19,7 +19,7 @@
 
 #pragma mark - CornerRadius 圆角
 /// 设置圆角
-- (void)setCornerRadius:(CGFloat)cornerRadius {
+- (void)setLMCornerRadius:(CGFloat)cornerRadius {
     [self cornerSideType:kCornerRadiusTypeAll withCornerRadius:cornerRadius];
 }
 

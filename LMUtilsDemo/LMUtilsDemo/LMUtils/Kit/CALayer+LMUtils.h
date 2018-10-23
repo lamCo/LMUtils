@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger,kCornerRadiusType) {
 /**
  @param cornerRadius cornerRadius 圆角半径
  */
-- (void)setCornerRadius:(CGFloat)cornerRadius;
+- (void)setLMCornerRadius:(CGFloat)cornerRadius;
 
 
 @end
