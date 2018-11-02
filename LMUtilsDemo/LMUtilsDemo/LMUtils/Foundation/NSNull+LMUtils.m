@@ -74,4 +74,8 @@
     return @"";
 }
 
+- (BOOL)isEqualToString:(NSString *)aString {
+    return NO;
+}
+
 @end

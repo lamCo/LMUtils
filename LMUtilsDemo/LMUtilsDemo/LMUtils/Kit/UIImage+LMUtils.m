@@ -42,7 +42,7 @@
     UIImage *image = [self lm_imageNamed:name];
     
 #ifdef DEBUG
-    NSLog(@"image name:<%@> no file",name);
+    if (!image) NSLog(@"image name:<%@> no file",name);
 #endif
     return image;
 }

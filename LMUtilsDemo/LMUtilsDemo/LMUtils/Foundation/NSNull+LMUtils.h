@@ -30,4 +30,6 @@
 @property (readonly) NSUInteger unsignedIntegerValue NS_AVAILABLE(10_5, 2_0);
 @property (readonly, copy) NSString *stringValue;
 
+- (BOOL)isEqualToString:(NSString *)aString;
+
 @end

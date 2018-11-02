@@ -26,3 +26,5 @@
 #import "NSMutableArray+LMUtils.h"
 #import "NSObject+LMUtils.h"
 #import "NSNotificationCenter+LMUtils.h"
+#import "NSNumber+LMUtils.h"
+#import "NSMutableAttributedString+LMUtils.h"

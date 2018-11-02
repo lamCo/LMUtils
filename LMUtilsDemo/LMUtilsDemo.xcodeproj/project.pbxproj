@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B080DB5215352110009CD7B /* NSMutableArray+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */; };
+		3B20DF02218C2CDE00B4D471 /* NSNumber+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B20DF01218C2CDE00B4D471 /* NSNumber+LMUtils.m */; };
 		3B20FD9E2175777E0061492B /* UINavigationController+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B20FD9D2175777E0061492B /* UINavigationController+LMUtils.m */; };
 		3B23EF1E217DB28000C0F1DF /* UILabel+LMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B23EF1D217DB28000C0F1DF /* UILabel+LMUtils.m */; };
 		3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C0E6F211AEB7800AB3360 /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		3B080DB3215352110009CD7B /* NSMutableArray+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LMUtils.h"; sourceTree = "<group>"; };
 		3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LMUtils.m"; sourceTree = "<group>"; };
+		3B20DF00218C2CDE00B4D471 /* NSNumber+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+LMUtils.h"; sourceTree = "<group>"; };
+		3B20DF01218C2CDE00B4D471 /* NSNumber+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+LMUtils.m"; sourceTree = "<group>"; };
 		3B20FD9C2175777E0061492B /* UINavigationController+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LMUtils.h"; sourceTree = "<group>"; };
 		3B20FD9D2175777E0061492B /* UINavigationController+LMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LMUtils.m"; sourceTree = "<group>"; };
 		3B23EF1C217DB28000C0F1DF /* UILabel+LMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+LMUtils.h"; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				3B83F80A2133E90C00495682 /* NSMutableAttributedString+LMUtils.m */,
 				3B080DB3215352110009CD7B /* NSMutableArray+LMUtils.h */,
 				3B080DB4215352110009CD7B /* NSMutableArray+LMUtils.m */,
+				3B20DF00218C2CDE00B4D471 /* NSNumber+LMUtils.h */,
+				3B20DF01218C2CDE00B4D471 /* NSNumber+LMUtils.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				3B83F8022133CF0B00495682 /* UIScrollView+LMEventObstruct.m in Sources */,
 				3B4C0E70211AEB7800AB3360 /* AppDelegate.m in Sources */,
 				3BA6D268216B516F00ED5F86 /* UIViewController+LMUtils.m in Sources */,
+				3B20DF02218C2CDE00B4D471 /* NSNumber+LMUtils.m in Sources */,
 				3B4C0E99211AEBB100AB3360 /* UIAlertAction+LMUtils.m in Sources */,
 				3B20FD9E2175777E0061492B /* UINavigationController+LMUtils.m in Sources */,
 				3B83F80B2133E90C00495682 /* NSMutableAttributedString+LMUtils.m in Sources */,
