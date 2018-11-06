@@ -63,4 +63,54 @@
     return size;
 }
 
+/// 转换
++ (NSString *)dateToString:(NSDate *)date dateFormatter:(NSString *)dateFormatter {
+    //日期
+    NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
+    [dateformatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateformatter setTimeStyle:NSDateFormatterShortStyle];
+    [dateformatter setDateFormat:dateFormatter];
+    NSString *dateString = [dateformatter stringFromDate:date];
+    return dateString ? dateString : @"";
+}
+
+
+//date转string
++ (NSString *)timeIntervalToString:(NSTimeInterval)timeInterval dateFormatter:(NSString *)dateFormatter {
+    
+    if (timeInterval <= 0) return @"";
+    
+    if (!dateFormatter || ![dateFormatter isKindOfClass:[NSString class]])return @"";
+    
+    
+    NSDate *date = nil;
+    
+    //毫秒级
+    if (timeInterval > 1000000000000.f) {
+        date = [NSDate dateWithTimeIntervalSince1970:timeInterval / 1000.f];
+    } else {
+        date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    }
+    
+    return [self dateToString:date dateFormatter:dateFormatter];
+}
+
+/// 转换
++ (NSDate *)stringToDate:(NSString *)string dateFormatter:(NSString *)dateFormatter {
+    return [string toDateWithFormatter:dateFormatter];
+}
+
+/// 转换
+- (NSDate *)toDateWithFormatter:(NSString *)dateFormatter {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSTimeZone *timeZone = [NSTimeZone localTimeZone];
+    
+    [formatter setTimeZone:timeZone];
+    [formatter setDateFormat : dateFormatter];
+    
+    NSDate *dateTime = [formatter dateFromString:self];
+    
+    return dateTime ? dateTime : [NSDate date];
+}
+
 @end

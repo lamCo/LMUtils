@@ -38,4 +38,22 @@
  */
 - (CGSize)stringSizeFromMaxSize:(CGSize)size font:(UIFont *)font;
 
+/**
+ *  date转string
+ *
+ *  @param timeInterval  时间戳
+ *  @param dateFormatter 规则
+ *
+ */
++ (NSString *)timeIntervalToString:(NSTimeInterval)timeInterval
+                     dateFormatter:(NSString *)dateFormatter;
+/// 转换
++ (NSString *)dateToString:(NSDate *)date
+             dateFormatter:(NSString *)dateFormatter;
+/// 转换
++ (NSDate *)stringToDate:(NSString *)string
+           dateFormatter:(NSString *)dateFormatter;
+/// 转换
+- (NSDate *)toDateWithFormatter:(NSString *)dateFormatter;
+
 @end
