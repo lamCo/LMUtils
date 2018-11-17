@@ -15,15 +15,15 @@
 /**
  *  创建不换行的label NSLineBreakByTruncatingTail
  *
- *  @param size          字体大小
+ *  @param size          字体大小系统字体
  *  @param textColor     字体颜色
  *  @param textAlignment 字体位置格式
  *
  *  @return label
  */
-+ (instancetype)labelWithFontSize:(CGFloat)size
-                              textColor:(UIColor *)textColor
-                          textAlignment:(NSTextAlignment)textAlignment;
++ (instancetype)labelWithSystemFontOfSize:(CGFloat)size
+                                textColor:(UIColor *)textColor
+                            textAlignment:(NSTextAlignment)textAlignment;
 
 /**
  *  创建不换行的label NSLineBreakByTruncatingTail

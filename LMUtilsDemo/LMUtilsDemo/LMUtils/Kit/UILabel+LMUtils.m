@@ -11,9 +11,9 @@
 @implementation UILabel (LMUtils)
 
 /// 创建
-+ (instancetype)labelWithFontSize:(CGFloat)size
-                              textColor:(UIColor *)textColor
-                          textAlignment:(NSTextAlignment)textAlignment {
++ (instancetype)labelWithSystemFontOfSize:(CGFloat)size
+                                textColor:(UIColor *)textColor
+                          t extAlignment:(NSTextAlignment)textAlignment {
     
     return [self labelWithFont:[UIFont systemFontOfSize:size]
                            textColor:textColor
