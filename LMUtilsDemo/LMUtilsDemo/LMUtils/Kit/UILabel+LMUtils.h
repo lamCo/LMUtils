@@ -12,18 +12,16 @@
     label分类
  */
 @interface UILabel (LMUtils)
-/**
- *  创建不换行的label NSLineBreakByTruncatingTail
- *
- *  @param size          字体大小系统字体
- *  @param textColor     字体颜色
- *  @param textAlignment 字体位置格式
- *
- *  @return label
- */
+
+/// 创建不换行的label SystemFontOfSize:
 + (instancetype)labelWithSystemFontOfSize:(CGFloat)size
                                 textColor:(UIColor *)textColor
                             textAlignment:(NSTextAlignment)textAlignment;
+
+/// 创建不换行的label BoldSystemFontOfSize:
++ (instancetype)labelWithBoldSystemFontOfSize:(CGFloat)size
+                                    textColor:(UIColor *)textColor
+                                textAlignment:(NSTextAlignment)textAlignment;
 
 /**
  *  创建不换行的label NSLineBreakByTruncatingTail
@@ -38,18 +36,17 @@
                     textColor:(UIColor *)textColor
                 textAlignment:(NSTextAlignment)textAlignment;
 
-/**
- *  创建换行的label NSLineBreakByWordWrapping
- *
- *  @param size          字体大小
- *  @param textColor     字体颜色
- *  @param textAlignment 字体位置格式
- *
- *  @return label
- */
-+ (instancetype)labelWrapWithFontSize:(CGFloat)size
-                            textColor:(UIColor *)textColor
-                        textAlignment:(NSTextAlignment)textAlignment;
+
+/// 创建换行的label SystemFontOfSize: NSLineBreakByWordWrapping
++ (instancetype)labelWrapWithSystemFontOfSize:(CGFloat)size
+                                    textColor:(UIColor *)textColor
+                                textAlignment:(NSTextAlignment)textAlignment;
+
+/// 创建不换行的label BoldSystemFontOfSize:
++ (instancetype)labelWrapWithBoldSystemFontOfSize:(CGFloat)size
+                                        textColor:(UIColor *)textColor
+                                    textAlignment:(NSTextAlignment)textAlignment;   
+
 
 /**
  *  创建换行的label NSLineBreakByWordWrapping

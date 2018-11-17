@@ -13,12 +13,23 @@
 /// 创建
 + (instancetype)labelWithSystemFontOfSize:(CGFloat)size
                                 textColor:(UIColor *)textColor
-                          t extAlignment:(NSTextAlignment)textAlignment {
+                          textAlignment:(NSTextAlignment)textAlignment {
     
     return [self labelWithFont:[UIFont systemFontOfSize:size]
                            textColor:textColor
                        textAlignment:textAlignment];
 }
+
+/// 创建
++ (instancetype)labelWithBoldSystemFontOfSize:(CGFloat)size
+                                    textColor:(UIColor *)textColor
+                                textAlignment:(NSTextAlignment)textAlignment {
+    
+    return [self labelWithFont:[UIFont boldSystemFontOfSize:size]
+                     textColor:textColor
+                 textAlignment:textAlignment];
+}
+
 /// 创建
 + (instancetype)labelWithFont:(UIFont *)font
                           textColor:(UIColor *)textColor
@@ -33,12 +44,21 @@
 }
 
 /// 创建
-+ (instancetype)labelWrapWithFontSize:(CGFloat)size
-                                  textColor:(UIColor *)textColor
-                              textAlignment:(NSTextAlignment)textAlignment {
++ (instancetype)labelWrapWithSystemFontOfSize:(CGFloat)size
+                                    textColor:(UIColor *)textColor
+                                textAlignment:(NSTextAlignment)textAlignment {
     return [self labelWrapWithFont:[UIFont systemFontOfSize:size]
                          textColor:textColor
                     textAlignment:textAlignment];
+}
+
+/// 创建
++ (instancetype)labelWrapWithBoldSystemFontOfSize:(CGFloat)size
+                                        textColor:(UIColor *)textColor
+                                    textAlignment:(NSTextAlignment)textAlignment {
+    return [self labelWrapWithFont:[UIFont boldSystemFontOfSize:size]
+                         textColor:textColor
+                     textAlignment:textAlignment];
 }
 
 /// 创建
@@ -52,6 +72,8 @@
                numberOfLines:0
                lineBreakMode:NSLineBreakByCharWrapping];
 }
+
+
 
 
 // 创建
