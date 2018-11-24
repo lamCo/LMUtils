@@ -87,7 +87,12 @@
     
     //毫秒级
     if (timeInterval > 1000000000000.f) {
-        date = [NSDate dateWithTimeIntervalSince1970:timeInterval / 1000.f];
+        /// 微妙级别
+        if (timeInterval > 1000000000000000.f) {
+            date = [NSDate dateWithTimeIntervalSince1970:timeInterval / 1000000.f];
+        } else {
+            date = [NSDate dateWithTimeIntervalSince1970:timeInterval / 1000.f];
+        }
     } else {
         date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
     }
