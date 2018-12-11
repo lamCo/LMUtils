@@ -23,7 +23,7 @@
     [UIAlertAction setDefaultTitleColor:[UIColor redColor]];
     [UIAlertController setDefaultColor:[UIColor greenColor]];
     
-    [UIImage imageNamed:nil];
+    [UIImage imageNamed:@"Grop" inBundle:[NSBundle mainBundle] compatibleWithTraitCollection:nil];
     
     LMLog(@"%@",[UIColor colorWithHex:0xFFFFFF]);
     

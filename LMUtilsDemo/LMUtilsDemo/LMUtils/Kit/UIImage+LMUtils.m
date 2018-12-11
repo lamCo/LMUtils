@@ -12,23 +12,37 @@
 
 @implementation UIImage (LMUtils)
 
+static void lm_Method_exchangeClassImplementations(Class cls,SEL originalSelector, SEL swizzledSelector) {
+    
+    Method originalMethod = class_getClassMethod(cls, originalSelector);
+    
+    Method swizzledMethod = class_getClassMethod(cls, swizzledSelector);
+    
+    method_exchangeImplementations(originalMethod, swizzledMethod);
+}
+
 + (void)load {
     @autoreleasepool {
         static dispatch_once_t onceToken;
         
         dispatch_once(&onceToken, ^{
             
-            Class class = [self class];
+//            Class class = [self class];
             
-            SEL originalSelector = @selector(imageNamed:);
+//            SEL originalSelector = @selector(imageNamed:inBundle:compatibleWithTraitCollection:);
             
-            SEL swizzledSelector = @selector(lm_imageNamed:);
+//            SEL swizzledSelector = @selector(lm_imageNamed:inBundle:compatibleWithTraitCollection:);
             
-            Method originalMethod = class_getClassMethod(class, originalSelector);
+            lm_Method_exchangeClassImplementations([self class], @selector(imageNamed:), @selector(lm_imageNamed:));
             
-            Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
+            lm_Method_exchangeClassImplementations([self class], @selector(imageNamed:inBundle:compatibleWithTraitCollection:), @selector(lm_imageNamed:inBundle:compatibleWithTraitCollection:));
             
-            method_exchangeImplementations(originalMethod, swizzledMethod);
+            
+//            Method originalMethod = class_getClassMethod(class, originalSelector);
+//
+//            Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
+//
+//            method_exchangeImplementations(originalMethod, swizzledMethod);
         });
     }
 }
@@ -43,6 +57,15 @@
     
 #ifdef DEBUG
     if (!image) NSLog(@"image name:<%@> no file",name);
+#endif
+    return image;
+}
+
++ (UIImage *)lm_imageNamed:(NSString *)name inBundle:(NSBundle *)bundle compatibleWithTraitCollection:(UITraitCollection *)traitCollection {
+    UIImage *image = [self lm_imageNamed:name inBundle:bundle compatibleWithTraitCollection:traitCollection];
+    
+#ifdef DEBUG
+    if (!image) NSLog(@"boundle:<%@> image name:<%@> no file",bundle,name);
 #endif
     return image;
 }
