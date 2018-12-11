@@ -8,7 +8,7 @@
 
 #import "UIImage+LMUtils.h"
 #import <objc/runtime.h>
-
+#import "UIColor+LMUtils.h"
 
 @implementation UIImage (LMUtils)
 
@@ -48,11 +48,18 @@
 }
 
 
++ (UIImage *)imageWithColorHex:(unsigned int)hex {
+    return [self imageWithColorHex:hex alpha:1];
+}
+
++ (UIImage *)imageWithColorHex:(unsigned int)hex alpha:(CGFloat)alpha {
+    return [self imageWithColor:[UIColor colorWithHex:hex alpha:alpha]];
+}
+
 + (UIImage *)imageWithColor:(UIColor *)color {
     CGFloat wd = 1.0 / UIScreen.mainScreen.scale;
     return [self imageWithColor:color size:CGSizeMake(wd, wd)];
 }
-
 
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size{
     @autoreleasepool {

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 /**
     UIImage 分类
  */
@@ -17,6 +18,23 @@
 /// width
 @property (nonatomic, readonly)CGFloat width;
 
+
+/**
+ 颜色Hex转image
+
+ @param hex 16进制颜色 0x123456方式来创建
+ @return image
+ */
++ (UIImage *)imageWithColorHex:(unsigned int)hex;
+
+/**
+ 颜色Hex转image
+ 
+ @param hex 16进制颜色 0x123456方式来创建
+ @param alpha 透明度
+ @return image
+ */
++ (UIImage *)imageWithColorHex:(unsigned int)hex alpha:(CGFloat)alpha;
 
 /**
   颜色转image

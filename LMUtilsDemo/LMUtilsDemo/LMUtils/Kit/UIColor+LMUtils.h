@@ -21,7 +21,7 @@
 /**
  16进制颜色 0x123456方式来创建
  */
-+ (instancetype)colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha ;
++ (instancetype)colorWithHex:(unsigned int)hex alpha:(CGFloat)alpha;
 
 /**
  随机颜色

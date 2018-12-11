@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LMUtils"
-  s.version      = "0.0.12"
+  s.version      = "0.0.13"
   s.summary      = "日常使用分类库。"
   s.homepage     = "https://github.com/lamCo/LMUtils"
   s.license      = "MIT"
