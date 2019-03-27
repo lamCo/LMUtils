@@ -19,4 +19,13 @@
     return [self filteredArrayUsingPredicate:predicate];
 }
 
+/// 筛选
+- (id)filteredArrayReturnFirstObjcet:(NSString *)predicateString {
+    NSArray *filteredArray = [self filteredArrayUsingPredicateString:predicateString];
+    if (filteredArray && filteredArray.count > 0) {
+        return filteredArray.firstObject;
+    }
+    return nil;
+}
+
 @end

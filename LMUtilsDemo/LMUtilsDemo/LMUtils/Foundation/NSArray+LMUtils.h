@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (LMUtils)
+@interface NSArray<ObjectType> (LMUtils)
 
 /**
  通过NSPredicate筛选
  @param predicateString 筛选文字
  */
-- (NSArray *)filteredArrayUsingPredicateString:(NSString *)predicateString;
+- (NSArray<ObjectType> *)filteredArrayUsingPredicateString:(NSString *)predicateString;
+
+/**
+ 通过NSPredicate筛选，筛选不为nil，返回一个obj
+ @param predicateString 筛选文字
+ */
+- (ObjectType)filteredArrayReturnFirstObjcet:(NSString *)predicateString;
 
 @end
