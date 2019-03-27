@@ -15,3 +15,26 @@
 @property (nonatomic) NSTimeInterval acceptEventInterval;
 
 @end
+
+
+@interface UIButton (LMCreate)
+
+
+/**
+ 快速设置button状态
+
+ @param title title
+ @param color color
+ @param font 字体大小
+ @param image 颜色
+ @param backgroundImage 背景颜色
+ @param state 状态
+ */
+- (void)setTitle:(NSString *)title
+      titleColor:(UIColor *)color
+            font:(UIFont *)font
+           image:(UIImage *)image
+ backgroundImage:(UIImage *)backgroundImage
+        forState:(UIControlState)state;
+
+@end

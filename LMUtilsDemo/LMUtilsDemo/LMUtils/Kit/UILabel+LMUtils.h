@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIColor+LMUtils.h"
 
 /**
     label分类
@@ -15,8 +16,19 @@
 
 /// 创建不换行的label SystemFontOfSize:
 + (instancetype)labelWithSystemFontOfSize:(CGFloat)size
+                             textColorHex:(unsigned int)textColorHex
+                            textAlignment:(NSTextAlignment)textAlignment;
+
+/// 创建不换行的label SystemFontOfSize:
++ (instancetype)labelWithSystemFontOfSize:(CGFloat)size
                                 textColor:(UIColor *)textColor
                             textAlignment:(NSTextAlignment)textAlignment;
+
+
+/// 创建不换行的label BoldSystemFontOfSize:
++ (instancetype)labelWithBoldSystemFontOfSize:(CGFloat)size
+                                 textColorHex:(unsigned int)textColorHex
+                                textAlignment:(NSTextAlignment)textAlignment;
 
 /// 创建不换行的label BoldSystemFontOfSize:
 + (instancetype)labelWithBoldSystemFontOfSize:(CGFloat)size
@@ -36,11 +48,20 @@
                     textColor:(UIColor *)textColor
                 textAlignment:(NSTextAlignment)textAlignment;
 
+/// 创建换行的label SystemFontOfSize: NSLineBreakByWordWrapping
++ (instancetype)labelWrapWithSystemFontOfSize:(CGFloat)size
+                                textColorHex:(unsigned int)textColorHex
+                                textAlignment:(NSTextAlignment)textAlignment;
 
 /// 创建换行的label SystemFontOfSize: NSLineBreakByWordWrapping
 + (instancetype)labelWrapWithSystemFontOfSize:(CGFloat)size
                                     textColor:(UIColor *)textColor
                                 textAlignment:(NSTextAlignment)textAlignment;
+
+/// 创建不换行的label BoldSystemFontOfSize:
++ (instancetype)labelWrapWithBoldSystemFontOfSize:(CGFloat)size
+                                     textColorHex:(unsigned int)textColorHex
+                                    textAlignment:(NSTextAlignment)textAlignment;
 
 /// 创建不换行的label BoldSystemFontOfSize:
 + (instancetype)labelWrapWithBoldSystemFontOfSize:(CGFloat)size

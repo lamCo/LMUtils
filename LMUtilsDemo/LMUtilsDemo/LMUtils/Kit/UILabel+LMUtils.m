@@ -9,6 +9,14 @@
 #import "UILabel+LMUtils.h"
 
 @implementation UILabel (LMUtils)
+/// 创建
++ (instancetype)labelWithSystemFontOfSize:(CGFloat)size
+                             textColorHex:(unsigned int)textColorHex
+                            textAlignment:(NSTextAlignment)textAlignment {
+    return [self labelWithSystemFontOfSize:size
+                                 textColor:[UIColor colorWithHex:textColorHex]
+                             textAlignment:textAlignment];
+}
 
 /// 创建
 + (instancetype)labelWithSystemFontOfSize:(CGFloat)size
@@ -18,6 +26,15 @@
     return [self labelWithFont:[UIFont systemFontOfSize:size]
                            textColor:textColor
                        textAlignment:textAlignment];
+}
+
+/// 创建不换行的label BoldSystemFontOfSize:
++ (instancetype)labelWithBoldSystemFontOfSize:(CGFloat)size
+                                 textColorHex:(unsigned int)textColorHex
+                                textAlignment:(NSTextAlignment)textAlignment {
+    return [self labelWithBoldSystemFontOfSize:size
+                                     textColor:[UIColor colorWithHex:textColorHex]
+                                 textAlignment:textAlignment];
 }
 
 /// 创建
@@ -43,6 +60,15 @@
                lineBreakMode:NSLineBreakByTruncatingTail];
 }
 
+/// 创建换行的label SystemFontOfSize: NSLineBreakByWordWrapping
++ (instancetype)labelWrapWithSystemFontOfSize:(CGFloat)size
+                                 textColorHex:(unsigned int)textColorHex
+                                textAlignment:(NSTextAlignment)textAlignment {
+    return [self labelWrapWithSystemFontOfSize:size
+                                     textColor:[UIColor colorWithHex:textColorHex]
+                                 textAlignment:textAlignment];
+}
+
 /// 创建
 + (instancetype)labelWrapWithSystemFontOfSize:(CGFloat)size
                                     textColor:(UIColor *)textColor
@@ -50,6 +76,15 @@
     return [self labelWrapWithFont:[UIFont systemFontOfSize:size]
                          textColor:textColor
                     textAlignment:textAlignment];
+}
+
+/// 创建不换行的label BoldSystemFontOfSize:
++ (instancetype)labelWrapWithBoldSystemFontOfSize:(CGFloat)size
+                                     textColorHex:(unsigned int)textColorHex
+                                    textAlignment:(NSTextAlignment)textAlignment {
+    return [self labelWrapWithBoldSystemFontOfSize:size
+                                         textColor:[UIColor colorWithHex:textColorHex]
+                                     textAlignment:textAlignment];
 }
 
 /// 创建
@@ -72,9 +107,6 @@
                numberOfLines:0
                lineBreakMode:NSLineBreakByCharWrapping];
 }
-
-
-
 
 // 创建
 + (instancetype)label:(UIColor *)backgroundColor

@@ -108,3 +108,23 @@ static const char *UIControl_ignoreEvent = "UIControl_ignoreEvent";
     [self lm_sendAction:action to:target forEvent:event];
 }
 @end
+
+
+
+@implementation UIButton (LMCreate)
+
+
+- (void)setTitle:(NSString *)title
+      titleColor:(UIColor *)color
+            font:(UIFont *)font
+           image:(UIImage *)image
+ backgroundImage:(UIImage *)backgroundImage
+        forState:(UIControlState) state {
+    [self setTitle:title forState:state];
+    [self setTitleColor:color forState:state];
+    [[self titleLabel] setFont:font];
+    [self setImage:image forState:state];
+    [self setBackgroundImage:backgroundImage forState:state];
+}
+
+@end
