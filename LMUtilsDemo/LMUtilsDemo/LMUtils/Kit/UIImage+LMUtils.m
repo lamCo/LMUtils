@@ -149,4 +149,19 @@ static void lm_Method_exchangeClassImplementations(Class cls,SEL originalSelecto
 }
 
 
+/// 改变图片size
+- (UIImage *)scaleToSize:(CGSize)size {
+    /// 准备
+    UIGraphicsBeginImageContextWithOptions(size, NO, [[UIScreen mainScreen] scale]);
+    // 绘制改变大小的图片
+    [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    // 从当前context中创建一个改变大小后的图片
+    UIImage * scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    // 使当前的context出堆栈
+    UIGraphicsEndImageContext();
+    // 返回新的改变大小后的图片
+    return scaledImage;
+}
+
+
 @end

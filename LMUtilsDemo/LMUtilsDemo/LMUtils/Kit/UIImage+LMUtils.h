@@ -71,4 +71,11 @@
 
 
 
+/**
+ 改变图片size
+
+ @param size size
+ @return image
+ */
+- (UIImage *)scaleToSize:(CGSize)size;
 @end
